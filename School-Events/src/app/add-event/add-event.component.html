@@ -1,0 +1,15 @@
+<form>
+  <label for=""></label>
+  <input #name name="" type="text">
+
+  <label for=""></label>
+  <input #date name="" type="date">
+
+  <label for=""></label>
+  <input #duration name="" type="number">
+
+  <label for=""></label>
+  <input #classes name="" type="text">
+
+  <button (click)="addevent(name.value, date.value, duration.value, classes,value)">Add Event</button>
+</form>
