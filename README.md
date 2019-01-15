@@ -1,5 +1,5 @@
 # Angular-Jbh-Learn
 
 ## Project School Events
-* ngFor
+        * ngFor
 * Takes data from service
