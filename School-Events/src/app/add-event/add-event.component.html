@@ -1,15 +1,18 @@
 <form>
-  <label for=""></label>
-  <input #name name="" type="text">
+  <label for="Name" class="col-sm-2 col-form-label">Name </label>
+  <input class="form-control" #name name="Name" type="text" placeholder="Enter Name">
 
-  <label for=""></label>
-  <input #date name="" type="date">
+  <label for="date" class="col-sm-2 col-form-label">Date </label>
+  <input class="form-control" #date name="Date" type="date" placeholder="Enter Date">
 
-  <label for=""></label>
-  <input #duration name="" type="number">
+  <label for="Duration" class="col-sm-2 col-form-label">Duration </label>
+  <input class="form-control" #duration name="Duration" type="number" placeholder="Enter Duration">
 
-  <label for=""></label>
-  <input #classes name="" type="text">
+  <!-- <div class="form-check">
+    <label for="interest" class="col-sm-2 col-form-label">Classes</label>
+    <input name="interest[]" class="form-check-input position-static " type="checkbox" id="blankCheckbox" value="" aria-label="...">
+  </div> -->
 
-  <button (click)="addevent(name.value, date.value, duration.value, classes,value)">Add Event</button>
+  <button class="mt-4 btn btn-primary btn-lg btn-block" (click)="addevent(name.value, date.value, duration.value, classes,value)">Add
+    Event</button>
 </form>

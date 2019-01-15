@@ -1,2 +1,6 @@
 # Angular-Jbh-Learn
-### add gitignore
+
+## Project School Events
+
+    *ngFor
+    *Takes data from service
