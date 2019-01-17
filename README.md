@@ -5,3 +5,6 @@
 * serveices
 * ngFor
 * Takes data from service
+* routing
+* Input
+* Output

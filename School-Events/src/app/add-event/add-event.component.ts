@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { EventModul } from '../moduls/event.modul';
+import { EventModul } from '../models/event.model';
+import { Classroom } from '../classroom.enum';
 
 @Component({
   selector: 'app-add-event',
@@ -9,25 +10,34 @@ import { EventModul } from '../moduls/event.modul';
 export class AddEventComponent implements OnInit {
 
   constructor() { }
-
+  arraynum: number;
   ngOnInit() {
   }
-  addevent(name: string, date: Date, duration: number, classes: string){
-    if(!name || !date || !duration)return;
-    if(Number.isNaN(Number(duration)))return;
+  addevent(name: string, date: Date, duration: number, classes: string) {
+    console.log(name);
+
+    if (!name || !date || !duration) return;
+    if (Number.isNaN(Number(duration))) return;
     let arrayEvents = [];
     var array = JSON.parse(window.localStorage.getItem('events'));
-    for(let i = 0; i< array.length; i++){
-      arrayEvents.push(array[i])
+    if (array!== null) {
+      for (let i = 0; i < array.length; i++) {
+        arrayEvents.push(array[i])
+      }
+       this.arraynum = array.length+1;
+    }else{
+      this.arraynum = 1
     }
+    
     const event = <EventModul>{
+      id: this.arraynum,
       name: name,
       date: date,
       duration: Number(duration),
-      classes: classes
+      classes: [Classroom.A, Classroom.B,Classroom.C]
     }
     arrayEvents.push(event)
-    let eventi =  JSON.stringify(arrayEvents)
+    let eventi = JSON.stringify(arrayEvents)
     localStorage.setItem('events', eventi);
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EventModul } from '../moduls/event.modul';
+import { EventModul } from "../models/EventModul";
 import { EventService } from '../services/event.service';
 
 @Component({
@@ -14,8 +14,8 @@ export class ViewEventComponent implements OnInit {
   ngOnInit() {
     this.events = this.eventService.get();
     // console.log(this.events );
-    
-
   }
-
+  deleteChild(id){
+    this.eventService.delete(id);
+  }
 }
