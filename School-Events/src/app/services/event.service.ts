@@ -16,8 +16,9 @@ export class EventService  {
   
   delete(id: number) {
      
-    debugger;
     const idx = this.events.findIndex(e => e.id == id);
     this.events.splice(idx, 1);
+    let eventi = JSON.stringify(this.events)
+    localStorage.setItem('events', eventi);
    }
 }
