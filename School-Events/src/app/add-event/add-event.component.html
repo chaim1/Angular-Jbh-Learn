@@ -1,4 +1,4 @@
-<form>
+<form >
   <label for="Name" class="col-sm-2 col-form-label">Name </label>
   <input class="form-control" #name name="Name" type="text" placeholder="Enter Name">
 
@@ -8,11 +8,15 @@
   <label for="Duration" class="col-sm-2 col-form-label">Duration </label>
   <input class="form-control" #duration name="Duration" type="number" placeholder="Enter Duration">
 
-  <!-- <div class="form-check">
-    <label for="interest" class="col-sm-2 col-form-label">Classes</label>
-    <input name="interest[]" class="form-check-input position-static " type="checkbox" id="blankCheckbox" value="" aria-label="...">
-  </div> -->
+  <div class="form-check">
+    <label   for="interest[]" class="col-sm-2 col-form-label">Classes</label>
+    a<input  #interest name="interest[]"type="checkbox" id="blankCheckbox" value="0" >
+    b<input #interest name="interest[]"type="checkbox" id="blankCheckbox" value="1" >
+    c<input #interest name="interest[]"type="checkbox" id="blankCheckbox" value="2" >
+    d<input #interest name="interest[]"type="checkbox" id="blankCheckbox" value="3" >
 
-  <button class="mt-4 btn btn-primary btn-lg btn-block" (click)="addevent(name.value, date.value, duration.value, classes.value)">Add
+  </div>
+
+  <button class="mt-4 btn btn-primary btn-lg btn-block" (click)="addevent(name.value, date.value, duration.value, interest)">Add
     Event</button>
 </form>
