@@ -8,15 +8,15 @@
   <label for="Duration" class="col-sm-2 col-form-label">Duration </label>
   <input class="form-control" #duration name="Duration" type="number" placeholder="Enter Duration">
 
-  <div class="form-check">
-    <label   for="interest[]" class="col-sm-2 col-form-label">Classes</label>
-    a<input  #interest name="interest[]"type="checkbox" id="blankCheckbox" value="0" >
-    b<input #interest name="interest[]"type="checkbox" id="blankCheckbox" value="1" >
-    c<input #interest name="interest[]"type="checkbox" id="blankCheckbox" value="2" >
-    d<input #interest name="interest[]"type="checkbox" id="blankCheckbox" value="3" >
-
+  <div class="form-check"> 
+    <label   for="" class="col-sm-2 col-form-label" >Classes</label>
+    <div  *ngFor="let cl of classes">
+      {{cl}}<input #classesArray[] name=""type="checkbox" id="blankCheckbox" value="{{cl}}" >
+    </div>
+ 
   </div>
+ 
 
-  <button class="mt-4 btn btn-primary btn-lg btn-block" (click)="addevent(name.value, date.value, duration.value, interest)">Add
+  <button class="mt-4 btn btn-primary btn-lg btn-block" (click)="addevent(name.value, date.value, duration.value, classesArray[])">Add
     Event</button>
 </form>

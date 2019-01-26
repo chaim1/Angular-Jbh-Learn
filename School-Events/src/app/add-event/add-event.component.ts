@@ -8,9 +8,12 @@ import { Classroom } from '../classroom.enum';
   styleUrls: ['./add-event.component.css']
 })
 export class AddEventComponent implements OnInit {
-
-  constructor() { }
+  classes: Classroom[];
+  constructor() {
+    this.classes=[1,2,3,4,5];
+   }
   arraynum: number;
+  event: EventModul[] ;
   ngOnInit() {
   }
   addevent(name: string, date: Date, duration: number, classes: number) {
