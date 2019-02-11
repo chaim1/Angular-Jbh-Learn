@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenusModul } from '../moduls/menu.modul';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  menuItems;
+  menuItems: MenusModul[];
   constructor() { 
     this.menuItems = [
       {
