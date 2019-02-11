@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
 import { MenuListComponent } from './header/menu-list/menu-list.component';
 import { AboutComponent } from './about/about.component';
+import { ErrorPageComponentComponent } from './error-page-component/error-page-component.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AboutComponent } from './about/about.component';
     HeaderComponent,
     HomeComponent,
     MenuListComponent,
-    AboutComponent
+    AboutComponent,
+    ErrorPageComponentComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
