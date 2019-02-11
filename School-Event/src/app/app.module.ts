@@ -8,8 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
 import { MenuListComponent } from './header/menu-list/menu-list.component';
 import { AboutComponent } from './about/about.component';
-import { ErrorPageComponentComponent } from './error-page-component/error-page-component.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { EventsComponent } from './events/events.component';
+import { EventListComponent } from './events/event-list/event-list.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,9 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     HomeComponent,
     MenuListComponent,
     AboutComponent,
-    ErrorPageComponentComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    EventsComponent,
+    EventListComponent
   ],
   imports: [
     BrowserModule,

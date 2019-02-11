@@ -1,0 +1,26 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "dateStart": "Wed Mar 25 2015 02:00:00 GMT+0200 (Israel Standard Time)",
+            "duration": 1.30,
+            "participants": [
+                {
+                    "id": 1,
+                    "name": "event1"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "dateStart": "Wed Mar 25 2015 02:00:00 GMT+0200 (Israel Standard Time)",
+            "duration": 1.30,
+            "participants": [
+                {
+                    "id": 1,
+                    "name": "event1"
+                }
+            ]
+        }
+    ]
+}
