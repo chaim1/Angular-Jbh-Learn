@@ -1,10 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand"routerLink="home">Navbar</a>
+  <a class="navbar-brand"routerLink="/">Navbar</a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
-      </li>
+    <ul class="nav nav-tabs navbar-nav mr-auto">
+      <app-menu-list *ngFor="let item of menuItems" [menuItem]="item"></app-menu-list>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -12,3 +10,5 @@
     </form>
   </div>
 </nav>
+
+

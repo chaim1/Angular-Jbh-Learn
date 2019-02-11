@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  menuItems;
+  constructor() { 
+    this.menuItems = [
+      {
+        target: 'home',
+        anchor: 'Home'
+      },
+      {
+        target: 'about',
+        anchor: 'About'
+      }
+    ]
+  }
 
   ngOnInit() {
   }
