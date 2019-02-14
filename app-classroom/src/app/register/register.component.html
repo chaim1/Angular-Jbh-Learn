@@ -1,0 +1,28 @@
+<form  #f="ngForm">
+<label for="">Name
+  <input type="text"
+  name="name"
+  [(ngModel)]="userModel.name"
+  required>
+</label>
+<label for="">Age
+  <input type="number"
+  name="age"
+  [(ngModel)]="userModel.age"
+  required>
+</label>
+<label for="">gender
+  <input type="number"
+  name="gender"
+  [(ngModel)]="userModel.gender"
+  required>
+</label>
+<label for="">ellphone
+  <input type="text"
+  name="celphone"
+  [(ngModel)]="userModel.celphone"
+  required>
+</label>
+<button (click)="register(f)">Register</button>
+</form>
+{{userModel| json}}
