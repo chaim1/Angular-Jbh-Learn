@@ -1,2 +1,12 @@
-<p>
-{{ memberData | json }}</p>
+<div *ngIf='memberData'>
+    <div *ngFor="let member of memberData">
+        <p>
+            id: {{ member.id  }}</p>
+        <p>
+            budget: {{ member.budgetUSD | curency }}</p>
+        <p>
+            totalProducts: {{ member.totalProducts  }}</p>
+        <p>
+            lastPurchase: {{ member.lastPurchase  }}</p>
+    </div>
+</div>

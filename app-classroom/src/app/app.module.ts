@@ -10,6 +10,7 @@ import { MemberComponent } from './member/member.component';
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MemberService } from './services/member.service';
+import { CurencyPipe } from './pipes/curency.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MemberService } from './services/member.service';
     LoginComponent,
     HomeComponent,
     MemberComponent,
-    RegisterComponent
+    RegisterComponent,
+    CurencyPipe
   ],
   imports: [
     BrowserModule,

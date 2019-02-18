@@ -7,7 +7,7 @@ import { MemberService } from '../services/member.service';
   styleUrls: ['./member.component.css']
 })
 export class MemberComponent implements OnInit {
-  memberData;
+  memberData:[];
 
   constructor(private memberService: MemberService) { }
 
