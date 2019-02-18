@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { MemberComponent } from './member/member.component';
 import { RegisterComponent } from './register/register.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MemberService } from './services/member.service';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { RegisterComponent } from './register/register.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MemberService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
