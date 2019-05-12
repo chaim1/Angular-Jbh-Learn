@@ -1,0 +1,6 @@
+<input #event type="number" />
+<button (click)="addNumber(event)">add</button>
+<div>
+  <p>{{ nums | json}}</p>
+</div>
+<router-outlet></router-outlet>
